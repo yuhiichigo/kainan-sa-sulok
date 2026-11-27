@@ -790,3 +790,10 @@ img {
         flex-direction: column;
     }
 }
+.about-logo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 20px auto;
+}
