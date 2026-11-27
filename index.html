@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kainan sa Sulok | Sarap na Parang Nasa Bahay!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#home" class="logo">
+                <img src="image/logo.png" alt="Kainan sa Sulok Logo">
+                <span>Kainan sa Sulok</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#cart">My Cart (<span id="cartCount">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <span class="hero-label">WELCOME TO KAINAN SA SULOK</span>
+                <h1>Sarap na Parang Nasa Bahay!</h1>
+                <p>
+                    Enjoy delicious Filipino lutong-bahay meals
+                    made with warmth and love.
+                </p>
+                <a href="#menu" class="btn">Explore Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WELCOME -->
+    <section class="welcome-section">
+        <div class="container welcome-content">
+            <span class="section-label">GOOD FOOD, GOOD MOOD</span>
+            <h2>Your Home for Filipino Comfort Food</h2>
+            <p>
+                From classic Filipino dishes to refreshing drinks
+                and sweet desserts, we bring comforting homemade
+                flavors straight to your table.
+            </p>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">OUR MENU</span>
+                <h2>Discover Our Delicious Meals</h2>
+                <p>Find your favorite Filipino food here.</p>
+            </div>
+
+            <div class="menu-search">
+                <input
+                    type="text"
+                    id="foodSearch"
+                    placeholder="Search for your favorite food..."
+                >
+            </div>
+
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="All">All</button>
+                <button class="category-btn" data-category="Combo Meals">Combo Meals</button>
+                <button class="category-btn" data-category="Ulam Only">Ulam Only</button>
+                <button class="category-btn" data-category="Rice">Rice</button>
+                <button class="category-btn" data-category="Drinks">Drinks</button>
+                <button class="category-btn" data-category="Desserts">Desserts</button>
+            </div>
+
+            <div class="food-grid" id="foodGrid"></div>
+
+            <p class="empty-message" id="emptyMessage" hidden>
+                No food items found.
+            </p>
+        </div>
+    </section>
+
+    <!-- CART -->
+    <section class="cart-section" id="cart">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">YOUR ORDER</span>
+                <h2>My Shopping Cart</h2>
+                <p>Review your selected items before checkout.</p>
+            </div>
+
+            <div class="cart-container">
+                <div id="cartItems">
+                    <p class="empty-cart">Your cart is currently empty.</p>
+                </div>
+
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <strong id="subtotal">₱0.00</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Delivery Fee</span>
+                        <strong id="deliveryFee">₱0.00</strong>
+                    </div>
+
+                    <div class="summary-row total-row">
+                        <span>Total</span>
+                        <strong id="total">₱0.00</strong>
+                    </div>
+
+                    <button class="btn checkout-btn" id="checkoutBtn">
+                        Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="image/logo.png" alt="Kainan sa Sulok">
+            </div>
+
+            <div class="about-text">
+                <span class="section-label">ABOUT US</span>
+                <h2>Welcome to Kainan sa Sulok</h2>
+
+                <p>
+                    Kainan sa Sulok is a Filipino food business
+                    dedicated to serving delicious and affordable
+                    lutong-bahay meals.
+                </p>
+
+                <p>
+                    We believe that good food brings people together.
+                    Our menu offers familiar Filipino favorites,
+                    freshly prepared meals, refreshing drinks,
+                    and delightful desserts.
+                </p>
+
+                <p>
+                    Whether you are craving a complete meal or
+                    simply want your favorite ulam, we are happy
+                    to serve you.
+                </p>
+
+                <a href="#menu" class="btn">View Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO ORDER -->
+    <section class="order-section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">SIMPLE AND CONVENIENT</span>
+                <h2>How to Order</h2>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span>01</span>
+                    <h3>Choose Your Food</h3>
+                    <p>Browse our menu and add your favorites to your cart.</p>
+                </div>
+
+                <div class="step-card">
+                    <span>02</span>
+                    <h3>Place Your Order</h3>
+                    <p>Enter your details and choose pick-up or delivery.</p>
+                </div>
+
+                <div class="step-card">
+                    <span>03</span>
+                    <h3>Enjoy Your Meal</h3>
+                    <p>Wait for your order and enjoy delicious Filipino food!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">GET IN TOUCH</span>
+                <h2>Contact Us</h2>
+                <p>We would love to serve you!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Our Location</h3>
+                    <p>
+                        New Visayas, Panabo City,
+                        near Davao del Norte State College
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone Number</h3>
+                    <p>09260321553</p>
+                    <a href="tel:09260321553">Call Us</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email Address</h3>
+                    <p>kainansasulok@gmail.com</p>
+                    <a href="mailto:kainansasulok@gmail.com">Send an Email</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h3>Business Hours</h3>
+                    <p>Every Day</p>
+                    <p>8:00 AM – 9:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <img src="image/logo.png" alt="Kainan sa Sulok Logo">
+            <h3>Kainan sa Sulok</h3>
+            <p>Sarap na Parang Nasa Bahay!</p>
+            <p class="copyright">
+                &copy; 2026 Kainan sa Sulok. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+
+            <div id="checkoutFormContainer">
+                <h2>Complete Your Order</h2>
+                <p class="modal-subtitle">Please provide your information.</p>
+
+                <form id="checkoutForm">
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" required>
+
+                    <label for="customerPhone">Contact Number</label>
+                    <input type="tel" id="customerPhone" required
+                           placeholder="09XXXXXXXXX">
+
+                    <label for="orderType">Order Type</label>
+                    <select id="orderType" required>
+                        <option value="">Select order type</option>
+                        <option value="Pick-up">Pick-up</option>
+                        <option value="Delivery">Delivery</option>
+                    </select>
+
+                    <div id="addressField" hidden>
+                        <label for="customerAddress">Delivery Address</label>
+                        <textarea id="customerAddress"
+                                  placeholder="Enter your complete address"></textarea>
+                    </div>
+
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" required>
+                        <option value="">Select payment method</option>
+                        <option value="Cash">Cash</option>
+                        <option value="GCash">GCash</option>
+                    </select>
+
+                    <button type="submit" class="btn submit-btn">
+                        Place Order
+                    </button>
+                </form>
+            </div>
+
+            <div id="orderConfirmation" hidden>
+                <h2>Thank You for Your Order!</h2>
+                <p>Your order details have been prepared.</p>
+                <div id="confirmationDetails"></div>
+                <button class="btn" id="finishOrder">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
