@@ -8,7 +8,7 @@ const menuItems = [
         id: 1,
         name: "Adobong Baboy Combo",
         category: "Combo Meals",
-        price: 115,
+        price: 75,
         image: "adobong baboy with rice.jpg",
         description: "Pork adobo served with rice and a drink."
     },
@@ -16,7 +16,7 @@ const menuItems = [
         id: 2,
         name: "Adobong Manok Combo",
         category: "Combo Meals",
-        price: 100,
+        price: 75,
         image: "adobong manok with rice.jpg",
         description: "Chicken adobo served with rice and a drink."
     },
@@ -24,7 +24,7 @@ const menuItems = [
         id: 3,
         name: "Sinigang na Baboy Combo",
         category: "Combo Meals",
-        price: 115,
+        price: 85,
         image: "sinigang na baboy with rice.jpg",
         description: "Pork sinigang served with rice and a drink."
     },
@@ -32,7 +32,7 @@ const menuItems = [
         id: 4,
         name: "Tinolang Manok Combo",
         category: "Combo Meals",
-        price: 105,
+        price: 80,
         image: "tinolang manok with rice.jpg",
         description: "Chicken tinola served with rice and a drink."
     },
@@ -40,7 +40,7 @@ const menuItems = [
         id: 5,
         name: "Menudong Baboy Combo",
         category: "Combo Meals",
-        price: 100,
+        price: 80,
         image: "menudong baboy with rice.jpg",
         description: "Pork menudo served with rice and a drink."
     },
@@ -48,7 +48,7 @@ const menuItems = [
         id: 6,
         name: "Kalderetang Baka Combo",
         category: "Combo Meals",
-        price: 125,
+        price: 95,
         image: "kaderetang baka with rice.jpg",
         description: "Beef kaldereta served with rice and a drink."
     },
@@ -58,7 +58,7 @@ const menuItems = [
         id: 7,
         name: "Adobong Baboy",
         category: "Ulam Only",
-        price: 65,
+        price: 55,
         image: "adobong baboy.jpg",
         description: "Classic Filipino pork adobo."
     },
@@ -66,7 +66,7 @@ const menuItems = [
         id: 8,
         name: "Adobong Manok",
         category: "Ulam Only",
-        price: 60,
+        price: 55,
         image: "adobong manok.jpg",
         description: "Tender chicken cooked in soy sauce and vinegar."
     },
@@ -74,7 +74,7 @@ const menuItems = [
         id: 9,
         name: "Sinigang na Baboy",
         category: "Ulam Only",
-        price: 80,
+        price: 65,
         image: "sinigang na baboy.jpg",
         description: "Sour pork soup with fresh vegetables."
     },
@@ -82,7 +82,7 @@ const menuItems = [
         id: 10,
         name: "Tinolang Manok",
         category: "Ulam Only",
-        price: 70,
+        price: 60,
         image: "tinolang manok.jpg",
         description: "Warm chicken soup with vegetables."
     },
@@ -98,7 +98,7 @@ const menuItems = [
         id: 12,
         name: "Kalderetang Baka",
         category: "Ulam Only",
-        price: 90,
+        price: 75,
         image: "kalderetang baka.jpg",
         description: "Beef stew cooked in a rich tomato sauce."
     },
@@ -106,7 +106,7 @@ const menuItems = [
         id: 13,
         name: "Pinakbet",
         category: "Ulam Only",
-        price: 55,
+        price: 45,
         image: "pinakbet.jpg",
         description: "Mixed Filipino vegetables."
     },
@@ -114,7 +114,7 @@ const menuItems = [
         id: 14,
         name: "Pritong Bangus",
         category: "Ulam Only",
-        price: 50,
+        price: 65,
         image: "pritong bangus.jpg",
         description: "Crispy fried milkfish."
     },
@@ -132,7 +132,7 @@ const menuItems = [
         id: 16,
         name: "Fried Rice",
         category: "Rice",
-        price: 20,
+        price: 25,
         image: "fried rice.jpg",
         description: "Filipino garlic fried rice."
     },
@@ -150,7 +150,7 @@ const menuItems = [
         id: 18,
         name: "Calamansi Juice",
         category: "Drinks",
-        price: 25,
+        price: 15,
         image: "calamansi juice.jpg",
         description: "Fresh and refreshing calamansi juice."
     },
@@ -158,7 +158,7 @@ const menuItems = [
         id: 19,
         name: "Gulaman",
         category: "Drinks",
-        price: 20,
+        price: 15,
         image: "gulaman.jpg",
         description: "Sweet Filipino gulaman drink."
     },
@@ -176,7 +176,7 @@ const menuItems = [
         id: 21,
         name: "Leche Flan",
         category: "Desserts",
-        price: 35,
+        price: 30,
         image: "leche flan.jpg",
         description: "Smooth and creamy Filipino custard."
     },
@@ -184,7 +184,7 @@ const menuItems = [
         id: 22,
         name: "Halo-Halo",
         category: "Desserts",
-        price: 55,
+        price: 45,
         image: "halo halo.jpg",
         description: "Classic Filipino mixed dessert."
     },
@@ -192,7 +192,7 @@ const menuItems = [
         id: 23,
         name: "Buko Pandan",
         category: "Desserts",
-        price: 40,
+        price: 30,
         image: "buko pandan.jpg",
         description: "Creamy coconut and pandan dessert."
     },
@@ -200,7 +200,7 @@ const menuItems = [
         id: 24,
         name: "Mais con Yelo",
         category: "Desserts",
-        price: 45,
+        price: 35,
         image: "mais con yelo.jpg",
         description: "Sweet corn dessert with shaved ice."
     },
@@ -208,7 +208,7 @@ const menuItems = [
         id: 25,
         name: "Fruit Salad",
         category: "Desserts",
-        price: 45,
+        price: 35,
         image: "fruit salad.jpg",
         description: "Creamy Filipino-style fruit salad."
     }
